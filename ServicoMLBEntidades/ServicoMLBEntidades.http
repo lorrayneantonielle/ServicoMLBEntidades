@@ -1,0 +1,6 @@
+@ServicoMLBEntidades_HostAddress = http://localhost:5222
+
+GET {{ServicoMLBEntidades_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
