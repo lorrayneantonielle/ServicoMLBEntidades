@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XB7/zwFmk6I=",
+  "dgSpecHash": "Yqd+hT1ijQY=",
   "success": true,
-  "projectFilePath": "C:\\estudos\\ServicoMLBEntidades\\ServicoMLBEntidades\\ServicoMLBEntidades.csproj",
+  "projectFilePath": "C:\\estudos\\GestaoEntidades\\servico\\ServicoMLBEntidades\\ServicoMLBEntidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dti-\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\dti-\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
@@ -11,5 +11,15 @@
     "C:\\Users\\dti-\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "C:\\Users\\dti-\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://pkgs.dev.azure.com/alm-animaeducacao/_packaging/animacore/nuget/v3/index.json.",
+      "projectPath": "C:\\estudos\\GestaoEntidades\\servico\\ServicoMLBEntidades\\ServicoMLBEntidades.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\estudos\\GestaoEntidades\\servico\\ServicoMLBEntidades\\ServicoMLBEntidades.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
