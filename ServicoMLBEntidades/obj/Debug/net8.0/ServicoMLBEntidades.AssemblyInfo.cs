@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServicoMLBEntidades")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10febacd655dda9bded80ba89ac2346a50f91438")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0fe3cb0191bd833811ec20b5c7ec68cb4beed5f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServicoMLBEntidades")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServicoMLBEntidades")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

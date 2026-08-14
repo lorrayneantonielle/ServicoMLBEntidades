@@ -1,0 +1,29 @@
+# Build results
+bin/
+obj/
+out/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test results
+[Tt]est[Rr]esult*/
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# Local documento uploads (research.md §5 — Storage:DocumentosPath)
+App_Data/
+
+# Local secrets / environment overrides
+appsettings.*.local.json
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
