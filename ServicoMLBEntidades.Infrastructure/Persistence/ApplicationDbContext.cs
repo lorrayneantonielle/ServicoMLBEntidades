@@ -13,6 +13,10 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityR
     }
 
     public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+    public DbSet<Familia> Familias => Set<Familia>();
+    public DbSet<Membro> Membros => Set<Membro>();
+    public DbSet<Documento> Documentos => Set<Documento>();
+    public DbSet<FamiliaStatusHistorico> FamiliaStatusHistoricos => Set<FamiliaStatusHistorico>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
