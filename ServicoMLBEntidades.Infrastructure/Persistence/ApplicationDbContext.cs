@@ -20,6 +20,9 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityR
     public DbSet<EtapaObra> EtapasObra => Set<EtapaObra>();
     public DbSet<Medicao> Medicoes => Set<Medicao>();
     public DbSet<Ocorrencia> Ocorrencias => Set<Ocorrencia>();
+    public DbSet<UnidadeHabitacional> UnidadesHabitacionais => Set<UnidadeHabitacional>();
+    public DbSet<MutiraoEscala> MutiraoEscalas => Set<MutiraoEscala>();
+    public DbSet<Presenca> Presencas => Set<Presenca>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

@@ -25,6 +25,7 @@ public class FamiliaRepository : IFamiliaRepository
         return _dbContext.Familias
             .Include(f => f.Membros)
             .Include(f => f.Documentos)
+            .Include(f => f.UnidadeHabitacional)
             .FirstOrDefaultAsync(f => f.Id == id, ct);
     }
 
@@ -33,6 +34,7 @@ public class FamiliaRepository : IFamiliaRepository
         return _dbContext.Familias
             .Include(f => f.Membros)
             .Include(f => f.Documentos)
+            .Include(f => f.UnidadeHabitacional)
             .FirstOrDefaultAsync(f => f.Membros.Any(m => m.Id == membroId), ct);
     }
 
@@ -47,6 +49,7 @@ public class FamiliaRepository : IFamiliaRepository
         var query = _dbContext.Familias
             .Include(f => f.Membros)
             .Include(f => f.Documentos)
+            .Include(f => f.UnidadeHabitacional)
             .Where(f => !f.Excluida)
             .AsQueryable();
 

@@ -102,7 +102,7 @@ public class FamiliaService
             PontuacaoAcumulada = familia.PontuacaoAcumulada,
             Membros = familia.Membros.Select(MembroService.MapToResponse).ToList(),
             Documentos = familia.Documentos.Select(DocumentoService.MapToResponse).ToList(),
-            UnidadeHabitacionalId = null,
+            UnidadeHabitacionalId = familia.UnidadeHabitacional?.Id,
         };
     }
 }

@@ -27,10 +27,12 @@ public class FamiliaStatusService
     ];
 
     private readonly IFamiliaRepository _familiaRepository;
+    private readonly IUnidadeRepository _unidadeRepository;
 
-    public FamiliaStatusService(IFamiliaRepository familiaRepository)
+    public FamiliaStatusService(IFamiliaRepository familiaRepository, IUnidadeRepository unidadeRepository)
     {
         _familiaRepository = familiaRepository;
+        _unidadeRepository = unidadeRepository;
     }
 
     public async Task<FamiliaResponse> UpdateStatusAsync(
@@ -67,6 +69,16 @@ public class FamiliaStatusService
         else if (string.IsNullOrWhiteSpace(command.Motivo))
         {
             throw new BusinessRuleException("Motivo é obrigatório ao reverter o status da família.");
+        }
+
+        if (indiceNovo < indiceAtual)
+        {
+            var unidadeAtribuida = await _unidadeRepository.ObterPorFamiliaIdAsync(familia.Id, ct);
+            if (unidadeAtribuida is not null)
+            {
+                unidadeAtribuida.Status = UnidadeStatus.Livre;
+                unidadeAtribuida.FamiliaId = null;
+            }
         }
 
         var statusAnterior = familia.Status;

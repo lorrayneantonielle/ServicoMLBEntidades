@@ -15,4 +15,5 @@ public class Familia
 
     public List<Membro> Membros { get; set; } = [];
     public List<Documento> Documentos { get; set; } = [];
+    public UnidadeHabitacional? UnidadeHabitacional { get; set; }
 }
