@@ -11,6 +11,7 @@ using ServicoMLBEntidades.Application.Auth.Commands;
 using ServicoMLBEntidades.Application.Documentos;
 using ServicoMLBEntidades.Application.Familias;
 using ServicoMLBEntidades.Application.Membros;
+using ServicoMLBEntidades.Application.Obra;
 using ServicoMLBEntidades.Domain.Auth;
 using ServicoMLBEntidades.Domain.Repositories;
 using ServicoMLBEntidades.Domain.Services;
@@ -96,11 +97,17 @@ builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<IRefreshTokenRepository, RefreshTokenRepository>();
 builder.Services.AddScoped<IDocumentoStorageService, LocalDocumentoStorageService>();
 builder.Services.AddScoped<IFamiliaRepository, FamiliaRepository>();
+builder.Services.AddScoped<IEtapaObraRepository, EtapaObraRepository>();
+builder.Services.AddScoped<IMedicaoRepository, MedicaoRepository>();
+builder.Services.AddScoped<IOcorrenciaRepository, OcorrenciaRepository>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<FamiliaService>();
 builder.Services.AddScoped<FamiliaStatusService>();
 builder.Services.AddScoped<MembroService>();
 builder.Services.AddScoped<DocumentoService>();
+builder.Services.AddScoped<EtapaObraService>();
+builder.Services.AddScoped<MedicaoService>();
+builder.Services.AddScoped<OcorrenciaService>();
 
 builder.Services.AddValidatorsFromAssemblyContaining<LoginCommand>();
 

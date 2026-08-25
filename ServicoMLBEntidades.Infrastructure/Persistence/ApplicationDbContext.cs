@@ -17,6 +17,9 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityR
     public DbSet<Membro> Membros => Set<Membro>();
     public DbSet<Documento> Documentos => Set<Documento>();
     public DbSet<FamiliaStatusHistorico> FamiliaStatusHistoricos => Set<FamiliaStatusHistorico>();
+    public DbSet<EtapaObra> EtapasObra => Set<EtapaObra>();
+    public DbSet<Medicao> Medicoes => Set<Medicao>();
+    public DbSet<Ocorrencia> Ocorrencias => Set<Ocorrencia>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
